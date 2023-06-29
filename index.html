@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <label for="nome">Nome</label>
+        <div></div>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui..." required="true"/>
+        <div></div>
+        <br>
+        <label for="email">Email</label> 
+        <div></div>
+        <input type="text" id="email" name="email" placeholder="Digite seu email aqui..." required="true"/>
+        <div></div>
+        <br>  
+            <label for="mensagem">O que te motivou participar do evento?</label>
+            <div></div>
+            <textarea id="mensagem" placeholder="Descreva aqui..." cols="30" rows="5" name="mensagem" required="true"></textarea>
+        <br>
+            <label for="módulo">Selecione seu módulo</label>
+            <div></div>
+            <select name="módulo" required="true" id="módulo">
+                <option value="">Escolher módulo</option>
+                <option value="Básico">Básico</option>
+                <option value="Intermediário">Intermediário</option>
+                <option value="Avançado">Avançado</option>
+                <option value="Senior">Senior</option>
+            </select>
+            <div></div>
+            <br>
+        Cadastre uma senha
+        <div></div>
+        <input type="password" id="senha" name="senha" placeholder="Digite uma senha aqui..." required="true">
+        <div></div>
+        <br>
+        Confirme a senha
+        <div></div>
+        <input type="password" id="senhanovamente" name="senhanovamente" placeholder="Repita a senha..." required="true">
+        <div></div>
+        <br>
+            <p>Deseja receber novidades em seu email?</p>
+            <label for="sim">Sim</label>
+            <input id="sim" type="radio" required name="recebermensagens" value="sim">
+    
+            <label for="nao">Não</label>
+            <input id="nao" type="radio" required name="recebermensagens" value="nao">
+            <div></div>
+            <br>
+            <button type="submit">Cadastrar</button>
+        </form>
